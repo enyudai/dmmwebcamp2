@@ -4,4 +4,4 @@ puts array.join("*")
 
 string = "Hello"
 puts string.class
-puts string.join()
+puts string.join("*")
