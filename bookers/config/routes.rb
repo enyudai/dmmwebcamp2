@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :books, only: [index]
- root to: 'homes#top'
- end
+  resources :books
+  root to: 'homes#top'
+end
