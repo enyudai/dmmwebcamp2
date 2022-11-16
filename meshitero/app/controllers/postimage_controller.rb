@@ -11,12 +11,18 @@ def create
   redirect_to postimage_path
 end
 
+def destroy
+  @post_image = Postimage.find(params[:id])
+  @post_image.destroy
+  redirect_to postimage_path
+end
+
   def index
     @post_images = Postimage.all
   end
 
   def show
-    @post_image = Postimage.find(params[:])
+    @post_image = Postimage.find(params[:id])
   end
   
   private
